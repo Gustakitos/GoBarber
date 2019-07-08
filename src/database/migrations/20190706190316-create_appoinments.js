@@ -3,6 +3,9 @@ module.exports = {
     return queryInterface.createTable('appointments', {
       id: {
         type: Sequelize.INTEGER,
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
       },
       date: {
         allowNull: false,
